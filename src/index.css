@@ -1608,3 +1608,160 @@ button {
     transition: none;
   }
 }
+
+/* =========================================
+   FINAL MOBILE PROJECT CAROUSEL FIX
+========================================= */
+
+@media (max-width: 768px) {
+  .project-carousel {
+    width: 100%;
+    padding: 0 0 90px !important;
+    margin-top: 25px;
+  }
+
+  .project-carousel-viewport {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .project-carousel-track {
+    width: 100%;
+  }
+
+  .project-slide {
+    width: 100%;
+    flex: 0 0 100%;
+    box-sizing: border-box;
+  }
+
+  /* FEATURED PROJECT */
+
+  .project-carousel .featured-project {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 24px !important;
+  }
+
+  .project-carousel-featured .project-slide {
+    min-height: 0 !important;
+  }
+
+  .project-carousel-featured .featured-project-main {
+    display: block !important;
+    margin: 22px 0 !important;
+  }
+
+  .project-carousel-featured .featured-project h3 {
+    font-size: clamp(2rem, 9vw, 2.6rem);
+    line-height: 1.02;
+    margin: 8px 0 20px;
+  }
+
+  .project-carousel-featured .project-section {
+    margin-bottom: 22px;
+  }
+
+  .project-carousel-featured .project-section p {
+    font-size: 0.85rem;
+    line-height: 1.55;
+  }
+
+  .project-carousel-featured .project-learning {
+    border-left: 0 !important;
+    border-top: 1px solid var(--line);
+    padding: 18px 0 0 !important;
+    margin-top: 18px;
+  }
+
+  .project-carousel-featured .project-learning li {
+    font-size: 0.76rem;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+
+  .project-carousel-featured .featured-project-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding-top: 18px;
+  }
+
+  /* MORE BUILDS */
+
+  .project-carousel .more-project-card {
+    min-height: 0 !important;
+    padding: 24px !important;
+  }
+
+  .project-carousel .more-project-card h3 {
+    font-size: 1.8rem;
+    line-height: 1.1;
+    margin: 25px 0 14px;
+  }
+
+  .project-carousel .more-project-card > p {
+    font-size: 0.85rem;
+    line-height: 1.55;
+    margin-bottom: 22px;
+  }
+
+  /* TECHNOLOGY TAGS */
+
+  .project-carousel .stack-list {
+    gap: 5px;
+  }
+
+  .project-carousel .stack-list span {
+    padding: 5px 7px;
+    font-size: 0.57rem;
+  }
+
+  /* ARROWS
+     Put them BELOW the card instead of covering content.
+  */
+
+  .carousel-arrow {
+    top: auto !important;
+    bottom: 38px !important;
+    width: 38px;
+    height: 34px;
+    transform: none !important;
+    font-size: 16px;
+  }
+
+  .carousel-arrow-left {
+    left: 0 !important;
+  }
+
+  .carousel-arrow-right {
+    right: 0 !important;
+  }
+
+  .carousel-arrow:active {
+    transform: scale(0.94) !important;
+  }
+
+  /* COUNTER + INDICATORS */
+
+  .carousel-controls {
+    left: 50px !important;
+    right: 50px !important;
+    bottom: 0 !important;
+    height: 34px;
+  }
+
+  .carousel-dots {
+    gap: 5px;
+  }
+
+  .carousel-dots button {
+    width: 20px;
+    height: 3px;
+  }
+
+  .carousel-dots button.active {
+    width: 34px;
+  }
+}
